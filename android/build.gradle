@@ -3,7 +3,8 @@ version '1.0-SNAPSHOT'
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
     }
 
     dependencies {
@@ -13,13 +14,13 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+//        jcenter()
     }
 }
 apply plugin: 'com.android.library'
 android {
     namespace 'io.github.edufolly.flutterbluetoothserial'
-    compileSdkVersion 33
+    compileSdkVersion 34
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
